@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <div class="navbar bg">
+        <div class="container flex">
+            <h1 class="logo">Photo Fishing</h1>
+            <nav>
+                <ul>
+                    <li><a href="#login">Login</a></li>
+
+                    <li><a href="#price">Pricings</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Showcase-->
+    <section class="showcase bg">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1 class="mobile">All the photos you will ever need</h1>
+                <p class="mobile">Vecters,Psd,Photos and Icons</p>
+                <a href="#login" class="btn btn-outline">Sign Up</a>
+            </div>
+
+            <div class="showcase-form card">
+
+                <form>
+                    <h2>Free 1-month trial, cancel anytime.</h2>
+                    <p class="small">After the first month:</p>
+                    <form>
+                        <input type="checkbox" name="10 Images/month - anuual plan" id="plan" checked/>
+                        <label class="check">10 Images/month - annual plan</label>
+                        <br>
+                        <label for="plan">&#8377 2000</label><br>
+                        <input type="submit" value="Start Your Free Trial" class="btn btn-primary" />
+                    </form>
+            </div>
+        </div>
+    </section>
+    <!--Stats-->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1"></h3>
+
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-camera fa-3x"></i>
+                    <h3>1000000+</h3>
+                    <p class="text-secondary">More than a million photos</p>
+                </div>
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>Multiple Formats</h3>
+                    <p class="text-secondary">Psd, Img, Icons, Vectors...</p>
+                </div>
+                <div>
+                    <i class="fas fa-download fa-3x"></i>
+                    <h3>One click download</h3>
+                    <p class="text-secondary">Easily Downloadable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Pricing-->
+    <section class="price bg-sec my-2 py-2" id="price">
+        <div class="container grid">
+            <div class="text-center">
+                <h2 class="lg">Pricings</h2>
+                <p class="lead my-1">
+                    Photo Fishing is the cheapest place to get stock photos.
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!--Space-->
+    <section class="free-space">
+
+    </section>
+    <!--Signup-->
+    <section class="bg-3 size" id="login">
+        <div class="containe">
+            <form action="/action_page.php">
+                <div class="row">
+                    <h2 style="text-align:center">Login</h2>
+                    <div class="vl">
+                        <span class="vl-innertext">or</span>
+                    </div>
+                    <!--
+                    <div class="col">
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                        </a>
+                        <a href="#" class="twitter btn">
+                            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                        </a>
+                        <a href="#" class="google btn">
+                            <i class="fa fa-google fa-fw"></i> Login with Google+
+                        </a>
+                    </div>
+-->
+                    <div class="col">
+                        <div class="hide-md-lg">
+                            <p>Or sign in manually:</p>
+                        </div>
+
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="bottom-containe">
+        <div class="row">
+            <div class="col">
+                <a href="#" style="color:white" class="btn">Sign up</a>
+            </div>
+            <div class="col">
+                <a href="#" style="color:white" class="btn">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+    <!--Free Spcae-->
+    <section class="free-space-1"></section>
+    <!--Footer-->
+    <footer class="footer bg-dark py-5" id="contact">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Nilay Sagar</h1>
+                <p>Copyright &copy; 2021</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#login">Log in</a></li>
+
+                    <li><a href="#price">Pricings</a></li </ul>
+            </nav>
+            <div class="social">
+                <a href="mailto:nilaysagar01@gmail.com"><i class="fas fa-envelope fa-1x"></i>
+                    <label>Contact me here</label>
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDQNmfaRvGeQPLlC8zW_7Sz68H657eVo4M",
+          authDomain: "webhost-1d6c9.firebaseapp.com",
+          projectId: "webhost-1d6c9",
+          storageBucket: "webhost-1d6c9.appspot.com",
+          messagingSenderId: "32640322581",
+          appId: "1:32640322581:web:8c860e9c75328ad7b7921c",
+          measurementId: "G-MR7JCWDQLK"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+
+</html>
