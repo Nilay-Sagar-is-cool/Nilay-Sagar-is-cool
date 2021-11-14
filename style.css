@@ -395,7 +395,7 @@ input,
     font-size: 17px;
     line-height: 20px;
     text-decoration: none;
-    /* remove underline from anchors */
+    
 }
 
 input:hover,
@@ -404,7 +404,6 @@ input:hover,
 }
 
 
-/* add appropriate colors to fb, twitter and google buttons */
 
 .fb {
     background-color: #3b5998;
@@ -479,7 +478,6 @@ input[type="submit"]:hover {
 }
 
 
-/* hide some text on medium and large screens */
 
 .hide-md-lg {
     display: none;
